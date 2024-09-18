@@ -18,8 +18,8 @@ export default new Router({
       component: TradeStockList,
       props: true,
       children: [
-        { path: "/portfolio", props: true },
-        { path: "/sales", props: true },
+        { path: "/portfolio", component: TradeStockList,props: true },
+        { path: "/sales", component: TradeStockList,props: true },
       ],
     },
   ],
