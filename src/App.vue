@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <StockNav/>
+    <router-view />
     <StockList/>
     <StockMenu/>
   </div>
