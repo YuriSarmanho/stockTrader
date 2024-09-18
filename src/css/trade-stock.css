@@ -1,0 +1,32 @@
+.trade-stock-container {
+    width: 26rem;
+    height: 10rem;
+    border-radius: .3rem;
+    background-color: #eeeeee;
+}
+
+.stock-header {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    border-radius: .3rem .3rem 0 0;
+}
+
+.input-amount{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+.input-amount input{
+    width: 100%;
+}
+
+.header-buy {
+    background-color: #386dff;
+}
+.header-sell {
+    background-color: #ff3838;
+}
