@@ -24,7 +24,11 @@ export default {
 
     },
     sendBuyCommit() {
-      this.$store.commit('setAmount')
+      this.$store.commit('buyStock')
+      this.$store.commit('setPrice', this.price)
+    },
+    sendSellCommit() {
+      this.$store.commit('sellStock')
       this.$store.commit('setPrice', this.price)
     }
   },

@@ -12,9 +12,14 @@ export default new Vuex.Store({
     },
   },
   mutations: {
-    setAmount(state) {
+    buyStock(state) {
       return (state.countAmount =
         state.countAmount -
+        state.stockInformation.quantitie * state.stockInformation.price);
+    },
+    sellStock(state) {
+      return (state.countAmount =
+        state.countAmount +
         state.stockInformation.quantitie * state.stockInformation.price);
     },
     setQuantitie(state, payload) {
