@@ -8,7 +8,7 @@
     </div>
     <div class="input-amount">
         <input type="number">
-        <button>comprar</button>
+        <button>Enviar</button>
     </div>
   </div>
 </template>

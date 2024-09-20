@@ -21,7 +21,8 @@ export default {
                     name: 'Facebook',
                     price: 75
                 },
-            ]
+            ],
+            accountBalance: 10000
         }
     },
     components: {TradeStock}
