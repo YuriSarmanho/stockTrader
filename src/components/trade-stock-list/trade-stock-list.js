@@ -22,8 +22,8 @@ export default {
                     price: 75
                 },
             ],
-            accountBalance: 10000
         }
     },
-    components: {TradeStock}
+    components: {TradeStock},
+    
 }

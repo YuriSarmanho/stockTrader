@@ -7,8 +7,8 @@
       <p class="stock-price">(Preço:{{ price }}$)</p>
     </div>
     <div class="input-amount">
-        <input type="number">
-        <button>Enviar</button>
+        <input type="number" v-model="inputQuantitie" @input="setStockQuantitie">
+        <button @click="sendBuyCommit" >Enviar</button>
     </div>
   </div>
 </template>
