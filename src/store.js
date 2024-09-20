@@ -10,6 +10,24 @@ export default new Vuex.Store({
       quantitie: 0,
       price: 0,
     },
+    stocks: [
+      {
+          name: 'BMW',
+          price: 120,
+      },
+      {
+          name: 'Google',
+          price: 90
+      },
+      {
+          name: 'Apple',
+          price: 130
+      },
+      {
+          name: 'Facebook',
+          price: 75
+      },
+  ],
   },
   mutations: {
     buyStock(state) {

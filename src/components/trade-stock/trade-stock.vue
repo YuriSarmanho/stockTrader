@@ -8,8 +8,8 @@
     </div>
     <div class="input-amount">
         <input type="number" v-model="inputQuantitie" @input="setStockQuantitie">
-        <button v-if="!isOnSell" @click="sendBuyCommit" >Enviar</button>
-        <button v-if="isOnSell" @click="sendSellCommit" >Enviar</button>
+        <button v-if="!isOnSell" @click="sendBuyCommit" >Comprar</button>
+        <button v-if="isOnSell" @click="sendSellCommit" >Vender</button>
     </div>
   </div>
 </template>
