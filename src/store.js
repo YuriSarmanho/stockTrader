@@ -12,22 +12,26 @@ export default new Vuex.Store({
     },
     stocks: [
       {
-          name: 'BMW',
-          price: 120,
+        name: "BMW",
+        price: 120,
+        amountBougth: 0,
       },
       {
-          name: 'Google',
-          price: 90
+        name: "Google",
+        price: 90,
+        amountBougth: 0,
       },
       {
-          name: 'Apple',
-          price: 130
+        name: "Apple",
+        price: 130,
+        amountBougth: 0,
       },
       {
-          name: 'Facebook',
-          price: 75
+        name: "Facebook",
+        price: 75,
+        amountBougth: 0,
       },
-  ],
+    ],
   },
   mutations: {
     buyStock(state) {
@@ -41,10 +45,17 @@ export default new Vuex.Store({
         state.stockInformation.quantitie * state.stockInformation.price);
     },
     setQuantitie(state, payload) {
-        return state.stockInformation.quantitie = payload
+      return (state.stockInformation.quantitie = payload);
     },
     setPrice(state, payload) {
-        return state.stockInformation.price = payload
-    }
+      return (state.stockInformation.price = payload);
+    },
+    addAmountBougth(state, payload) {
+      return (state.stockInformation.amountBougth = state.stockInformation.amountBougth + payload);
+    },
+    addAmountSell(state) {
+      return (state.stockInformation.amountBougth =
+        state.stockInformation.amountBougth + state.stockInformation.quantitie);
+    },
   },
 });

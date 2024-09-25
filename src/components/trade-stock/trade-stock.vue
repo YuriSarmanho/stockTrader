@@ -5,6 +5,7 @@
     <div class="stock-header header-buy" :class="{'header-sell': isOnSell}">
       <h3 class="stock-title">{{ name }}</h3>
       <p class="stock-price">(Preço:{{ price }}$)</p>
+      <p>comprado:{{ amountBought }}</p>
     </div>
     <div class="input-amount">
         <input type="number" v-model="inputQuantitie" @input="setStockQuantitie">
